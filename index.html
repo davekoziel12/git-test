@@ -30,6 +30,10 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="col-md-4 col-xl-2">
+                    <a href="#reserveForm" class="btn btn-info btn-lg mt-4" role="button">Reserve Campsite</a>
+
+                </div>
             </div>
         </div>    
     </header>
@@ -56,13 +60,12 @@
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Discover & Review</h2>
+                <h2 class="text-sm-left">Discover & Review</h2>
             </div>
             <div class="col">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail thumbnail" />
                     <div class="media-body align-self-center">
-    
                 <h3>Our Campsites</h3>
                 <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
             </div>
@@ -73,11 +76,16 @@
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
-                <h2>Featured Campsites</h2>
+                <h2 class="text-sm-left">Featured Campsites</h2>
             </div>
-            <div class="col">
-                <h3>React Lake Campground</h3>
+            <div class="col">                      
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
                 <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake Thumbnail" />        
+                </div>
             </div>
         </div>                
     </div>
@@ -97,6 +105,57 @@
         </div>               
     </div>
     </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <div class="card-header text-white bg-info">
+                        <h3 >Reserve A Campsite</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="form-group row">
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number Of Campers</label>
+                                <div class="col-sm-6">      
+                                <select name="numCampers" id="numCampers" class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="date" class="form-control" id="date" name="date" placeholder="Date"/>
+                                </div>
+                            </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                      <button type="button" class="btn btn-primary" type="submit">Reserve</button>
+                                    </div>
+                                  </div>
+
+                            
+                        </form>
+                        </div>
+                    
+                        
+
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
     <footer class="site-footer">
